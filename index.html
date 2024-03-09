@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="inputfield">
+            <label for="input">Calculator</label><br><br>
+            <input type="text" placeholder="0" id="display" disabled>
+        </div>
+        <br>
+        <div class="operations">
+            <input type="button" value="7" id="" onclick="addToDisplay('7')">
+            <input type="button" value="8" id="" onclick="addToDisplay('8')">
+            <input type="button" value="9" id="" onclick="addToDisplay('9')">
+            <input type="button" value="DEL" id="DEL">
+            <!-- <br> -->
+            <input type="button" value="4" id="" onclick="addToDisplay('4')">
+            <input type="button" value="5" id="" onclick="addToDisplay('5')">
+            <input type="button" value="6" id="" onclick="addToDisplay('6')">
+            <input type="button" value="+" id="" onclick="addToDisplay('+')">
+            <!-- <br> -->
+            <input type="button" value="1" id="" onclick="addToDisplay('1')">
+            <input type="button" value="2" id="" onclick="addToDisplay('2')">
+            <input type="button" value="3" id="" onclick="addToDisplay('3')">
+            <input type="button" value="-" id="" onclick="addToDisplay('-')">
+            <!-- <br> -->
+            <input type="button" value="." id="" onclick="addToDisplay('.')">
+            <input type="button" value="0" id="" onclick="addToDisplay('0')">
+            <input type="button" value="/" id="" onclick="addToDisplay('/')">
+            <input type="button" value="*" id="" onclick="addToDisplay('*')">
+            <!-- <br> -->
+            <input type="button" value="RESET" id="reset" onclick="clearDisplay()">
+            <input type="button" value="=" id="equal" onclick="calculate()">
+        </div>
+    </div>
+    
+</body>
+</html>

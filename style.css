@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+body{
+    background-color: #3B4664;
+} 
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inputfield{
+    width: 500px;
+    height: 100px;
+    /* background-color: #181F32; */
+}
+input[type="text"]{
+    width: 500px;
+    height: 60px;
+    background-color: #181F32;
+    border-radius: 12px;
+    font-size: larger;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffff;
+    text-align: right;
+    padding: 10px;
+}
+label{
+    font-size: larger;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #ffff;
+}
+.operations{
+    display: grid;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 500px;
+    background-color: #252D44;
+    padding: 20px;
+    border-radius: 12px;
+}
+input[type="button"]{
+    height: 50px;
+    border: 2px none;
+    border-radius: 12px;
+    font-size: larger;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #181F32;;
+    background-color: #ffff; 
+}
+input[id="reset"]{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #647299;
+    color: #ffff;
+}
+input[id="equal"]{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #D13F30;
+    color: #ffff;
+}
+input[id="DEL"]{
+    background-color: #647299;
+    color: #ffff;
+}
